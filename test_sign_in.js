@@ -1,16 +1,6 @@
-// get the client import libarry 
-const mysql = require('mysql2');
- 
-// create the connection to database
-const connection = mysql.createConnection({
-  host: 'remotemysql.com',
-  database: 't7gVsdCmN9',
-  user: 't7gVsdCmN9', 
-  password: 'DUR4NwvPzu',
-});
+const { connection } = require("./connection.js");
 
 function checkUser(username, password) {
-
     // with placeholder
     connection.query(
         'SELECT * FROM `ACCOUNT` WHERE `USERNAME`=?',
@@ -26,5 +16,3 @@ function checkUser(username, password) {
 }
  
 checkUser('admin','admin1234');
-
-
