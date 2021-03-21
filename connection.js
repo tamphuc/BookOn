@@ -11,6 +11,4 @@ const connection = mysql.createConnection({
   password: config.password,
 });
 
-const a = 10;
-
-module.exports = { connection, a }
+module.exports = { connection }
