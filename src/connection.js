@@ -1,6 +1,6 @@
 // get the client import libarry 
 const mysql = require('mysql2');
-const config = require('./config/mysql.json');
+const config = require('../config/mysql.json');
  
 // create the connection to database
 

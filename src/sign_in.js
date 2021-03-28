@@ -1,5 +1,10 @@
 const { connection } = require("./connection.js");
 
+
+//input -> output  
+//return struc
+// 
+
 function checkUser(username, password) {
     // with placeholder
     connection.query(

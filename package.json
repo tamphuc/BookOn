@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "testsignin": "node test_sign_in.js"
-    
+    "signin": "node ./src/sign_in.js",
+    "signup": "node ./src/sign_up.js"
   },
   "keywords": [
     "book",
@@ -17,6 +17,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "mysql2": "^2.2.5"
   }
 }
