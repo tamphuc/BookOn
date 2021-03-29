@@ -1,8 +1,6 @@
-// get the client import libarry 
 const mysql = require('mysql2');
-const config = require('../config/mysql.json');
+const config = require('../../config/mysql.config.json');
  
-// create the connection to database
 
 const connection = mysql.createConnection({
   host: config.host,
@@ -11,4 +9,5 @@ const connection = mysql.createConnection({
   password: config.password,
 });
 
-module.exports = { connection }
+
+module.exports = connection

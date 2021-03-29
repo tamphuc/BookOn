@@ -1,4 +1,5 @@
-import { connection } from "./connection.js";
+import { connection } from "./models/database.js";
+
 function DBchecher(){
     connection.connect(function(err) {
         if (err) {
