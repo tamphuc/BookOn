@@ -9,7 +9,7 @@
 `[optional footer]`
 
 ## Một số type phổ biến
-Một số type phổ biến được khuyên sử dụng bao gồm:
+Một số type phổ biến được khuyên sử dụng bao gồm:\
 feat: thêm một feature.\
 
 fix: fix bug cho hệ thống.\
