@@ -9,22 +9,23 @@
 `[optional footer]`
 
 ## Một số type phổ biến
-Một số type phổ biến được khuyên sử dụng bao gồm:\
-feat: thêm một feature.\
+Một số type phổ biến được khuyên sử dụng bao gồm:
 
-fix: fix bug cho hệ thống.\
+feat: thêm một feature.
 
-refactor: sửa code nhưng không fix bug cũng không thêm feature hoặc đôi khi bug cũng được fix từ việc refactor.\
+fix: fix bug cho hệ thống.
 
-docs: thêm/thay đổi document.\
+refactor: sửa code nhưng không fix bug cũng không thêm feature hoặc đôi khi bug cũng được fix từ việc refactor.
 
-chore: những sửa đổi nhỏ nhặt không liên quan tới code.\
+docs: thêm/thay đổi document.
 
-style: những thay đổi không làm thay đổi ý nghĩa của code như thay đổi css/ui chẳng hạn.\
+chore: những sửa đổi nhỏ nhặt không liên quan tới code.
 
-perf: code cải tiến về mặt hiệu năng xử lý.\
+style: những thay đổi không làm thay đổi ý nghĩa của code như thay đổi css/ui chẳng hạn.
 
-vendor: cập nhật version cho các dependencies, packages.\
+perf: code cải tiến về mặt hiệu năng xử lý.
+
+vendor: cập nhật version cho các dependencies, packages.
 
 ### ex1:
 feat: implement multi-languages
