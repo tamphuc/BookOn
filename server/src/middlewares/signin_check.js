@@ -15,9 +15,8 @@ function is_username_exist(req, res, next) {
     }
 )
 }
+
 function is_password_correct(req, res, next) {
-
-
     connection.query('SELECT * FROM ACCOUNT WHERE USERNAME = ? and PASSWORD = ?', [req.body.username, req.body.password], function (err, result){
             if(result.length === 0) {
                 console.log('failed password');
