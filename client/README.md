@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Setup Environment
 ### `npm install`
+### `npm install react-script`
 ### `npm install @material-ui/core`
 ### `npm install react-router-dom --save`
 
