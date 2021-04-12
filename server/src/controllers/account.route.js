@@ -1,6 +1,5 @@
 const express = require('express');
 
-
 const router = express.Router();
 const connection = require ("../models/database.js");
 
@@ -16,6 +15,8 @@ const { is_username_exist, is_password_correct } = require("../middlewares/signi
 router.post('/signin', is_username_exist, is_password_correct, (req, res) => {
     res.redirect('/');
 });
+
+
 
 
 router.get('/signup', (req, res) => res.send("Get sign up"));
@@ -37,8 +38,6 @@ router.post('/signup', (req, res) => {
     }
 
 );
-
-
 
 router.get('/signout', (req, res) => res.send("Get sign out"));
 
