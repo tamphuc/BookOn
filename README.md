@@ -33,41 +33,48 @@ feat: implement multi-languages
 fix: homepage's bug
 
 
-########################################################################################
+######################################################
 note:
 render: tao ra mot noi dung xuat ra hinh anh, am thanh 
 
 id: dinh danh 
+
 respon: phan hoi 
+
 request: yeu cau
 
-###Trước khi code:
+## Trước khi code:
 git pull
 
-###Sau khi code:
+## Sau khi code:
 git add .
+
 git commit -m ""
+
 git pull
+
 git push origin main
 
-###kiểm tra trên git có cập nhật thì:
+## kiểm tra trên git có cập nhật thì:
 git add .
+
 git commit -m ""
+
 git pull
 
-###run:
+## run:
 cd server, npm install, npm run start
 cd client, npm install, npm run start 
 
-#front end cần làm thêm:
+## front end cần làm thêm:
 sign up:dong bao loi username exits, email exist
 sign in:dong bao loi username wrong, password wrong
 
-#Tiến độ: 
+## Tiến độ: 
 Full: sign in, sign up 
 Back-end:sign in, sign up, search(name, author,tag) 
 
-#Việc cần làm tiếp theo:
-#Back end:search, import book, read book
-#Giao diện: home, search, import book
+## Việc cần làm tiếp theo:
+## Back end:search, import book, read book
+## Giao diện: home, search, import book
 
