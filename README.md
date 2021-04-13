@@ -33,8 +33,8 @@ feat: implement multi-languages
 fix: homepage's bug
 
 
-######################################################
-note:
+
+### note:
 render: tao ra mot noi dung xuat ra hinh anh, am thanh 
 
 id: dinh danh 
