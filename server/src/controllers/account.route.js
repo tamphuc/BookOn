@@ -27,14 +27,14 @@ router.post('/signup', (req, res) => {
         let id_account = uuidv4();
         //lay data tu post req.body
         let sql = "INSERT INTO ACCOUNT (TYPE, EMAIL, ID_ACCOUNT, USERNAME, PASSWORD, STATUS, NAME) VALUES ?";
-        let value =[['User',req.body.email, id_account, req.body.username, req.body.password,'Active', req.body.name]];
+        let value =[['User',req.body.email, id_account, req.body.username, req.body.password,'Active', 'Name']];
         console.log(req.body);
 
         connection.query(sql,[value], function (err,result){
             console.log(err);
             console.log(result);
         })
-
+        res.send("Sign up sucessfully");
     }
 
 );

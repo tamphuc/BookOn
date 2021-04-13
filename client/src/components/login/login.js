@@ -14,7 +14,7 @@ export default class Login extends Component {
   };
 
   handleSubmit = (e) => {
-    e.preventDefault();
+    //e.preventDefault();
   };
 
   redirect = () => {
@@ -34,24 +34,29 @@ export default class Login extends Component {
         
         <div class="container right-panel-active">
           <div class="container__form container--signup">
-            <form action="#" class="form" onSubmit={this.handleSubmit}>
+            <form action="http://localhost:5000/account/signup" method="post" class="form" >
               <h2 class="form__title">Sign Up</h2>
-              <input type="text" placeholder="User" class="input" />
-              <input type="email" placeholder="Email" class="input" />
-              <input type="password" placeholder="Password" class="input" />
-              <button class="btn">Sign Up</button>
+              <input name="username" type="text" placeholder="User" class="input" />
+              <input name="email" type="email" placeholder="Email" class="input" />
+              <input name="password" type="password" placeholder="Password" class="input" />
+              
+              <button type="submit" class="btn">Sign Up</button>
             </form>
+            
+
           </div>
 
           <div class="container__form container--signin">
-            <form action="#" class="form" onSubmit={this.handleSubmit}>
+            <form action="http://localhost:5000/account/signin" method="post" class="form">
               <h2 class="form__title">Sign In</h2>
-              <input type="email" placeholder="Email" class="input" />
-              <input type="password" placeholder="Password" class="input" />
+              <input name="email" type="email" placeholder="Email" class="input" />
+              <input name="password" type="password" placeholder="Password" class="input" />
+              
               <a href="https://reactjs.org" class="link">
                 Forgot your password?
               </a>
-              <button class="btn" onClick={this.redirect}>Sign In</button>
+              
+              <button type="submit" class="btn" onClick={this.redirect}>Sign In</button>
             </form>
           </div>
 
