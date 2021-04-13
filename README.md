@@ -75,6 +75,6 @@ Full: sign in, sign up
 Back-end:sign in, sign up, search(name, author,tag) 
 
 ## Việc cần làm tiếp theo:
-## Back end:search, import book, read book
-## Giao diện: home, search, import book
+Back end:search, import book, read book
+Giao diện: home, search, import book
 
