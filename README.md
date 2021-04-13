@@ -64,17 +64,21 @@ git pull
 
 ## run:
 cd server, npm install, npm run start
+
 cd client, npm install, npm run start 
 
 ## front end cần làm thêm:
 sign up:dong bao loi username exits, email exist
+
 sign in:dong bao loi username wrong, password wrong
 
 ## Tiến độ: 
 Full: sign in, sign up 
+
 Back-end:sign in, sign up, search(name, author,tag) 
 
 ## Việc cần làm tiếp theo:
 Back end:search, import book, read book
+
 Giao diện: home, search, import book
 
