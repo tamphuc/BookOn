@@ -25,7 +25,7 @@ export default class Login extends Component {
 
   render() {
     return (
-      <Container maxidth="lg">
+      <div>
         <AppBar className="App-bar" position="static" color="inherit">
           <Typography className="title" variant="h2" align="center">
             BOOKON
@@ -75,9 +75,8 @@ export default class Login extends Component {
             </div>
           </div>
 
-          <h1>******************************************************</h1>
         </div>
-      </Container>
+      </div>
     );
   }
 }
