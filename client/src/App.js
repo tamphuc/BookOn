@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Helmet } from "react-helmet";
+//import { Helmet } from "react-helmet";
 import "./App.css";
 import Login from "./components/login/login";
-import Home from "./components/home/home.js";
-
+import Home from "./components/home/home";
+import Read from "./components/read/read"
 export default class App extends Component {
   render() {
     return (
@@ -13,6 +13,7 @@ export default class App extends Component {
           <Switch>
             <Route exact path={"/"} component={Login} />
             <Route exact path={"/home"} component={Home} />
+            <Route exact path={"/read"} component={Read} />
           </Switch>
         </BrowserRouter>
 
