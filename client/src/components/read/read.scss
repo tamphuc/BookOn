@@ -1,0 +1,350 @@
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+$grey: #777;
+$baseline: 1.75em;
+
+body {
+  /*for demo only - 
+  this should really be applied to 
+  your container div*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+
+  position: relative;
+  position: fixed;
+  padding: 0em;
+  background-color: #999;
+  font: {
+    family: "Open Sans", sans-serif;
+    weight: 400;
+    size: 15px;
+  }
+  line-height: $baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*base style for book and chrome - no magic yet */
+.book-reader {
+  header,
+  nav {
+    user-select: none;
+  }
+
+  header {
+    height: $baseline * 2;
+    @include box-shadow(
+      0 0.25em rgba(0, 0, 0, 0.2),
+      inset 0 -1px rgba(0, 0, 0, 0.6),
+      inset 0 -2px rgba(255, 255, 255, 0.15)
+    );
+    @include background(linear-gradient(top, lighten(rgba(0, 0, 0, 0), 0%) 0%, darken(rgba(0, 0, 0, 0.4), 10%) 99%));
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    background-color: #555;
+    a {
+      line-height: $baseline * 2;
+      text-decoration: none;
+      display: inline-block;
+      color: #ccc;
+      &:hover {
+        color: white;
+      }
+    }
+    h1 {
+      position: absolute;
+      top: 0;
+      margin-left: -3em;
+      text-align: center;
+      font-weight: 600;
+      width: 100%;
+      font-size: $baseline/1.5;
+      line-height: $baseline;
+      a {
+        padding: 0 1em;
+        line-height: $baseline;
+        display: inline;
+        z-index: 9;
+        box-shadow: none;
+      }
+    }
+    a[href="#home"] {
+      z-index: 9;
+      position: relative;
+
+      &:hover {
+        color: white;
+      }
+      @include box-shadow(inset -1px 0 rgba(255, 255, 255, 0.2), inset -2px 0 rgba(0, 0, 0, 0.24));
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.13);
+      display: block;
+      width: 8em;
+    }
+  }
+
+  nav {
+    position: absolute;
+    z-index: 8;
+    bottom: 0;
+    @include background(linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%));
+    display: table;
+    width: 100%;
+    padding: 0;
+    line-height: $baseline * 2;
+    height: $baseline * 2;
+    background: {
+      color: #ccc;
+    }
+    @include box-shadow(0 -0.2em rgba(0, 0, 0, 0.2), 0 -1px rgba(0, 0, 0, 0.16), inset 0 1px rgba(255, 255, 255, 0.3));
+    color: white;
+
+    text-transform: capitalize;
+    ul {
+      display: table-row;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: table-cell;
+        width: 33.3333%;
+        a {
+          color: #333;
+          text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+          text-decoration: none;
+          display: block;
+          width: 100%;
+          text-align: center;
+          &:hover {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+  }
+  header,
+  nav {
+    transition: all 0.2s ease;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  section {
+    transition: all 0.13s ease;
+    background-color: #fafafa;
+    text-shadow: 0 1px #fff;
+    position: absolute;
+    padding: 2em;
+    overflow: auto;
+    top: $baseline * 2;
+    bottom: $baseline * 2;
+    width: 90%;
+    left: 5%;
+    -webkit-transform: translate3d(0, 0, 0);
+    * {
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    @include box-shadow(0 0 1em rgba(0, 0, 0, 0.4));
+
+    @include background(linear-gradient(left, #ddd 0%, #fafafa 9%, #fafafa 91%, #ddd 100%));
+
+    -webkit-overflow-scrolling: touch; /*you're welcome tablet users*/
+
+    .page {
+      max-width: 40em;
+      margin: $baseline auto;
+    }
+    p {
+      margin: $baseline auto;
+      color: #888;
+    }
+    h1 {
+      font-size: $baseline * 1.5;
+      color: #555;
+      line-height: $baseline;
+      font-weight: 300;
+    }
+  }
+
+  img {
+    padding: 1em;
+    background-color: white;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+
+  a {
+    transition: all 0.15s ease;
+    @include box-shadow(inset -1px 0 rgba(255, 255, 255, 0.2), inset 1px 0 rgba(0, 0, 0, 0.12));
+  }
+
+  /*ios hacks*/
+
+  a,
+  label,
+  input {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: 0;
+  }
+  nav,
+  header {
+    -webkit-transform: translate3d(0, 0, 0);
+    label,
+    a {
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+/* 
+
+ ,__ __                      
+/|  |  |             o       
+ |  |  |   __,   __,     __  
+ |  |  |  /  |  /  | |  /    
+ |  |  |_/\_/|_/\_/|/|_/\___/
+                  /|         
+                  \|         
+
+Here is the fullscreen magic 
+
+You can use this technique to do other magic things like themed styles.  scaling text and anything else you can do with css and a toggle to invoke it 
+
+*/
+
+label[for="fullscreen"],
+label[for="invert"] {
+  transition: all 0.2s ease;
+  background-color: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  top: 0;
+  right: 0%;
+  text-align: center;
+  padding: 0 2em;
+  z-index: 100;
+  color: #aaa;
+  height: $baseline * 2;
+  cursor: pointer;
+  width: 11em;
+  line-height: $baseline * 2;
+  user-select: none;
+  @include box-shadow(inset 1px 0 rgba(255, 255, 255, 0.2), inset 2px 0 rgba(0, 0, 0, 0.2));
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+}
+
+#fullscreen {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+
+  /* neighbour selector all up in this*/
+  &:checked ~ nav {
+    bottom: -$baseline * 2;
+  }
+  &:checked ~ header {
+    top: -$baseline * 2;
+  }
+  &:checked ~ section {
+    top: 0;
+    bottom: 0;
+  }
+  &:checked ~ label[for="invert"] {
+    top: -$baseline * 2;
+  }
+  &:checked ~ label[for="fullscreen"] {
+    width: 7em;
+    padding: 0;
+    color: #aaa;
+    background-color: #fff;
+    @include box-shadow(inset 0 0 0 1px #fff, inset 0 0 0 2px #eee, 0 0.2em 0.4em rgba(0, 0, 0, 0.2));
+    &:before {
+      content: "Exit";
+    }
+  }
+}
+
+label[for="invert"] {
+  right: 11em;
+  width: 6em;
+}
+
+#invert {
+  position: absolute;
+  top: 2em;
+  z-index: -1;
+  opacity: 0;
+  &:checked ~ label[for="invert"] {
+    background-color: rgba(0, 0, 0, 0.35);
+    &:before {
+      content: "Day";
+    }
+  }
+  &:checked ~ section {
+    background-image: none;
+    background-color: #121212;
+    @include box-shadow(0 0 0 5.5em #111);
+    color: white;
+    text-shadow: none;
+    p,
+    h1 {
+      color: white;
+    }
+  }
+
+  &:checked ~ nav,
+  &:checked ~ header {
+    box-shadow: none;
+    background-color: #222;
+    color: #777;
+  }
+  &:checked ~ header a,
+  &:checked ~ label,
+  &:checked ~ nav a {
+    color: #777; /* box-shadow: none !important*/
+  }
+}
+
+label[for="fullscreen"]:before {
+  content: "Fullscreen";
+}
+label[for="invert"]:before {
+  content: "Night";
+}
+
+/*small size hack*/
+
+@media (max-width: 50em), (max-height: 25em) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 30em) {
+  .book-reader {
+    header {
+      h1 {
+        display: none;
+      }
+      a[href="#home"] {
+        padding: 0;
+        width: 5em;
+      }
+    }
+  }
+}

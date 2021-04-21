@@ -1,6 +1,6 @@
-import React, { Component}from "react";
+import React, { Component } from "react";
 import "./login.css";
-import { Container, AppBar, Typography } from "@material-ui/core";
+import { AppBar, Typography } from "@material-ui/core";
 
 export default class Login extends Component {
   signInBtn = () => {
@@ -18,45 +18,84 @@ export default class Login extends Component {
   };
 
   redirect = () => {
-    let url = "http://localhost:3000/home"
+    let url = "http://localhost:3000/home";
     //window.location.href = url;
     window.location.assign(url);
-  }
+  };
+  // componentDidMount() {
+  //   document.body.className = "body-login"; // Or set the class
+  // }
 
   render() {
     return (
-      <div>
-        <AppBar className="App-bar" position="static" color="inherit">
-          <Typography className="title" variant="h2" align="center">
-            BOOKON
-          </Typography>
-        </AppBar>
-        
+      <div id="body-login">
+        <div className="App-bar">
+          <AppBar className="App-bar" position="static" color="inherit">
+            <Typography className="title" variant="h1" align="center">
+              BOOKON
+            </Typography>
+          </AppBar>
+        </div>
         <div class="container right-panel-active">
           <div class="container__form container--signup">
-            <form action="http://localhost:5000/account/signup" method="post" class="form" >
+            <form
+              action="http://localhost:5000/account/signup"
+              method="post"
+              class="form"
+            >
               <h2 class="form__title">Sign Up</h2>
-              <input name="username" type="text" placeholder="User" class="input" />
-              <input name="email" type="email" placeholder="Email" class="input" />
-              <input name="password" type="password" placeholder="Password" class="input" />
-              
-              <button type="submit" class="btn">Sign Up</button>
-            </form>
-            
+              <input
+                name="username"
+                type="text"
+                placeholder="User"
+                class="input"
+              />
+              <input
+                name="email"
+                type="email"
+                placeholder="Email"
+                class="input"
+              />
+              <input
+                name="password"
+                type="password"
+                placeholder="Password"
+                class="input"
+              />
 
+              <button type="submit" class="btn">
+                Sign Up
+              </button>
+            </form>
           </div>
 
           <div class="container__form container--signin">
-            <form action="http://localhost:5000/account/signin" method="post" class="form">
+            <form
+              action="http://localhost:5000/account/signin"
+              method="post"
+              class="form"
+            >
               <h2 class="form__title">Sign In</h2>
-              <input name="email" type="email" placeholder="Email" class="input" />
-              <input name="password" type="password" placeholder="Password" class="input" />
-              
+              <input
+                name="email"
+                type="email"
+                placeholder="Email"
+                class="input"
+              />
+              <input
+                name="password"
+                type="password"
+                placeholder="Password"
+                class="input"
+              />
+
               <a href="https://reactjs.org" class="link">
                 Forgot your password?
               </a>
-              
-              <button type="submit" class="btn" onClick={this.redirect}>Sign In</button>
+
+              <button type="submit" class="btn" onClick={this.redirect}>
+                Sign In
+              </button>
             </form>
           </div>
 
@@ -74,7 +113,6 @@ export default class Login extends Component {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     );

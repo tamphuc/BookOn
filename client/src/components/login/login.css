@@ -17,11 +17,10 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-body {
+#body-login {
   align-items: center;
   background-color: var(--white);
-  /* background: url("https://res.cloudinary.com/dci1eujqw/image/upload/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg"); */
-  background: url("../images/background.jpg");
+  background: url(../images/background.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,6 +52,7 @@ body {
   max-width: var(--max-width);
   overflow: hidden;
   position: relative;
+  margin-bottom: 3rem;
   width: 100%;
 }
 
@@ -104,7 +104,6 @@ body {
 
 .overlay {
   background-color: var(--lightblue);
-  /* background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg"); */
   background: url("../images/background.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -204,20 +203,11 @@ body {
 }
 
 .App-bar {
-  border-radius: 20px;
-  margin: 20px 0;
-  display: flex;
+  border-radius: 25px;
+  margin-top: 1.5rem;
+  width: 59%;
   flex-direction: row;
   justify-content: center;
-  background: url("/src/components/images/background.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.image2 {
-  margin-right: 500px;
 }
 
 .title {
@@ -234,7 +224,7 @@ body {
   font-size: 0.8rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
-  padding: 0.9rem 20rem;
+  padding: 1rem 1rem;
   text-transform: uppercase;
 }
 
