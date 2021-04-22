@@ -5,6 +5,7 @@ import "./App.css";
 import Login from "./components/login/login";
 import Home from "./components/home/home";
 import Read from "./components/read/read"
+import Write from "./components/write/write"
 export default class App extends Component {
   render() {
     return (
@@ -14,6 +15,7 @@ export default class App extends Component {
             <Route exact path={"/"} component={Login} />
             <Route exact path={"/home"} component={Home} />
             <Route exact path={"/read"} component={Read} />
+            <Route exact path={"/write"} component={Write} />
           </Switch>
         </BrowserRouter>
 
