@@ -63,7 +63,7 @@ export default class Login extends Component {
                 class="input"
               />
 
-              <button type="submit" class="btn">
+              <button class="btn">
                 Sign Up
               </button>
             </form>
@@ -93,7 +93,7 @@ export default class Login extends Component {
                 Forgot your password?
               </a>
 
-              <button type="submit" class="btn" onClick={this.redirect}>
+              <button class="btn" onClick={this.redirect}>
                 Sign In
               </button>
             </form>
