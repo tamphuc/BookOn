@@ -13,7 +13,9 @@ router.get('/signin', (req, res) => res.send("Get sign in"));
 const { is_username_exist, is_password_correct } = require("../middlewares/signin_check");
 
 router.post('/signin', is_username_exist, is_password_correct, (req, res) => {
-    res.redirect('/');
+
+    return {result: true};
+    //res.redirect('/');
 });
 
 

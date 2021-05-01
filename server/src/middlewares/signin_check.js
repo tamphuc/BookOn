@@ -12,6 +12,7 @@ function is_username_exist(req, res, next) {
         }
         console.log('passed');
         next();
+
     }
 )
 }
