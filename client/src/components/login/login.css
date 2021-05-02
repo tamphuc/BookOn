@@ -204,8 +204,9 @@
 
 .App-bar {
   border-radius: 25px;
-  margin-top: 1.5rem;
-  width: 59%;
+  margin-top: 0.5rem;
+  display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: center;
 }
@@ -224,7 +225,7 @@
   font-size: 0.8rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
-  padding: 1rem 1rem;
+  padding: 1rem 15.3rem;
   text-transform: uppercase;
 }
 
