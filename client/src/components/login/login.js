@@ -52,7 +52,7 @@ export default class Login extends Component {
               />
               <input
                 name="email"
-                type="email"
+                type="text"
                 placeholder="Email"
                 class="input"
               />
@@ -78,7 +78,7 @@ export default class Login extends Component {
               <h2 class="form__title">Sign In</h2>
               <input
                 name="email"
-                type="email"
+                type="text"
                 placeholder="Email"
                 class="input"
               />
@@ -88,7 +88,10 @@ export default class Login extends Component {
                 placeholder="Password"
                 class="input"
               />
-
+              
+              {/* for Phuc */}
+              <div></div>
+              
               <a href="https://reactjs.org" class="link">
                 Forgot your password?
               </a>
