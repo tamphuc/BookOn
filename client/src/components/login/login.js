@@ -17,6 +17,15 @@ export default class Login extends Component {
     //e.preventDefault();
   };
 
+  handleSignin = (e) => {
+    e.preventDefault()
+    let url = "http://localhost:5000/signup"
+    let option = {method: "POST"}
+    fetch(url,option).then(function(response) {
+      console.log(response)
+    })
+  }
+
   redirect = () => {
     let url = "http://localhost:3000/home";
     //window.location.href = url;
@@ -63,7 +72,7 @@ export default class Login extends Component {
                 class="input"
               />
 
-              <button class="btn">
+              <button type="submit" class="btn">
                 Sign Up
               </button>
             </form>
@@ -74,6 +83,8 @@ export default class Login extends Component {
               action="http://localhost:5000/account/signin"
               method="post"
               class="form"
+              onsubmit={this.handleSignin}
+
             >
               <h2 class="form__title">Sign In</h2>
               <input
@@ -96,7 +107,7 @@ export default class Login extends Component {
                 Forgot your password?
               </a>
 
-              <button class="btn" onClick={this.redirect}>
+              <button type="submit" class="btn" >
                 Sign In
               </button>
             </form>
