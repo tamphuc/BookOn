@@ -103,7 +103,8 @@ a.button {
   border-radius: 3px;
   background-color: rgba(49, 49, 49, 0.5);
 }
-a.button:hover, a.button:focus {
+a.button:hover,
+a.button:focus {
   background-color: #219e9a;
 }
 
@@ -127,19 +128,23 @@ a.button:hover, a.button:focus {
 
 .main-logo {
   display: inline-block;
-  padding: 1em;
-  width: auto;
+  padding: 3em;
+  max-width: 100%;
+  /* max-height: 100%; */
+  height: auto;
+  background-image: url(../images/main_logo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  place-items: center;
+
 }
 .main-logo a.logo {
-  display: block;
-  width: 150px;
-  height: 40px;
-  text-indent: -9999px;
-  background: url("http://interactivejoe.com/book-viewer/assets/images/logo.svg");
-  background-color: #fff;
-  transition: background-color 250ms ease-out;
+  color: #fff;
+  font-size: 16px;
 }
-.main-logo a.logo:hover, .main-logo a.logo:focus {
+.main-logo a.logo:hover,
+.main-logo a.logo:focus {
   background-color: #ecf0f1;
 }
 
@@ -196,7 +201,7 @@ a.button:hover, a.button:focus {
   left: 0;
   padding: 0 0.25em;
   width: 100%;
-  font-size: 20px;  
+  font-size: 20px;
   height: calc(100% - 1em);
   color: #ffffff;
   font-weight: light;
@@ -207,9 +212,9 @@ a.button:hover, a.button:focus {
   -moz-osx-font-smoothing: grayscale;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .input_label:before {
   content: "";
@@ -333,7 +338,8 @@ a.button:hover, a.button:focus {
   position: relative;
   overflow-x: hidden;
 }
-.main-container.prevent-scroll, .main-container.nav-menu-open {
+.main-container.prevent-scroll,
+.main-container.nav-menu-open {
   overflow: hidden;
 }
 
@@ -814,7 +820,13 @@ a.button:hover, a.button:focus {
   width: 100%;
   height: 30px;
   background: rgba(255, 255, 255, 0);
-  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 30%, white 80%);
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 30%,
+    white 80%
+  );
 }
 .main-overlay .preview-content:after {
   content: "";
@@ -824,7 +836,13 @@ a.button:hover, a.button:focus {
   width: 100%;
   height: 50px;
   background: rgba(255, 255, 255, 0);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 30%, white 80%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 30%,
+    white 80%
+  );
 }
 
 .overlay-details {

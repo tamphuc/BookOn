@@ -37,11 +37,7 @@ export default class Home extends Component {
           <header id="header" class="page-header">
             <div class="page-header-container row">
               {/* <!-- Logo --> */}
-              {/* <div class="main-logo">
-                <a href="#" class="logo">
-                  The Library
-                </a>
-              </div> */}
+              <div class="main-logo" />
 
               <div class="menu-search">
                 {/* <!-- Main Navigation --> */}
