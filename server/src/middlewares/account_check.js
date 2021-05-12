@@ -8,11 +8,11 @@ function is_username_exist( condition) {
             let success;
             if (result.length === 0) {
                 success = false;
-                message = "username is not exist";
+                message = "Username is not exist.";
             }
             else {
                 success = true;
-                message = "username is exist"
+                message = "Username is exist."
             }
 
             if (condition === success) //signin success = true
