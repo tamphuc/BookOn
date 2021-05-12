@@ -19,11 +19,18 @@ export default class Login extends Component {
 
   handleSignin = (e) => {
     e.preventDefault()
-    let url = "http://localhost:5000/signup"
-    let option = {method: "POST"}
+    let url = "http://localhost:5000/account/signin"
+
+    let formData = new FormData(document.querySelector('signin_form'))
+
+    let option = {method: "POST", body: formData}
+
+
     fetch(url,option).then(function(response) {
       console.log(response)
     })
+
+
   }
 
   redirect = () => {
@@ -81,9 +88,10 @@ export default class Login extends Component {
           <div class="container__form container--signin">
             <form
               action="http://localhost:5000/account/signin"
+              id = "signin_form"
               method="post"
               class="form"
-              onsubmit={this.handleSignin}
+              onSubmit={this.handleSignin}
 
             >
               <h2 class="form__title">Sign In</h2>
@@ -100,8 +108,8 @@ export default class Login extends Component {
                 class="input"
               />
               
-              {/* for Phuc */}
-              <div></div>
+
+              <div id="error_div"></div>
               
               <a href="https://reactjs.org" class="link">
                 Forgot your password?
