@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./home.css";
-//import { Helmet } from "react-helmet";
 
 export default class Home extends Component {
   render() {
@@ -326,13 +325,9 @@ export default class Home extends Component {
         <div class="main-overlay">
           <div class="overlay-full"></div>
         </div>
-        {/* <Helmet>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/4.0.0/shuffle.min.js"></script>
-          <script src="./components/home/script.js"></script>
-        </Helmet> */}
       </div>
+
+      //******************************************************* */
     );
   }
 }

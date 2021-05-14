@@ -18,11 +18,6 @@ export default class App extends Component {
             <Route exact path={"/write"} component={Write} />
           </Switch>
         </BrowserRouter>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/4.0.0/shuffle.min.js"></script>
-        <script src="./components/home/script.js"></script>
       </div>
     );
   }

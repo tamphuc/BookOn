@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
-
+import "./write.css"
 export default class Write extends Component {
   render() {
     return (
       <div>
         <CKEditor
           editor={ClassicEditor}
-          data="<p>Where to write a new book</p>"
+          data="<p></p>"
           onReady={(editor) => {
             // You can store the "editor" and use when it is needed.
             console.log("Editor is ready to use!", editor);
@@ -17,6 +17,7 @@ export default class Write extends Component {
             const data = editor.getData();
             console.log({ event, editor, data });
           }}
+          
           onBlur={(event, editor) => {
             console.log("Blur.", editor);
           }}
@@ -24,7 +25,9 @@ export default class Write extends Component {
             console.log("Focus.", editor);
           }}
         />
+        <button type="submit" class="btn">Submit</button>
       </div>
+
     );
   }
 }

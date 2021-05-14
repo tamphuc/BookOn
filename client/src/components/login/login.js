@@ -18,20 +18,17 @@ export default class Login extends Component {
   };
 
   handleSignin = (e) => {
-    e.preventDefault()
-    let url = "http://localhost:5000/account/signin"
+    e.preventDefault();
+    let url = "http://localhost:5000/account/signin";
 
-    let formData = new FormData(document.querySelector('signin_form'))
+    let formData = new FormData(document.querySelector("signin_form"));
 
-    let option = {method: "POST", body: formData}
+    let option = { method: "POST", body: formData };
 
-
-    fetch(url,option).then(function(response) {
-      console.log(response)
-    })
-
-
-  }
+    fetch(url, option).then(function (response) {
+      console.log(response);
+    });
+  };
 
   redirect = () => {
     let url = "http://localhost:3000/home";
@@ -55,10 +52,9 @@ export default class Login extends Component {
         <div class="container right-panel-active">
           <div class="container__form container--signup">
             <form
-              action="http://localhost:5000/account/signup"
+              action="http://localhost:3000/home"
               method="post"
               class="form"
-
             >
               <h2 class="form__title">Sign Up</h2>
               <input
@@ -88,12 +84,11 @@ export default class Login extends Component {
 
           <div class="container__form container--signin">
             <form
-              action="http://localhost:5000/account/signin"
-              id = "signin_form"
+              action="http://localhost:3000/home"
+              id="signin_form"
               method="post"
               class="form"
               onSubmit={this.handleSignin}
-
             >
               <h2 class="form__title">Sign In</h2>
               <input
@@ -108,15 +103,14 @@ export default class Login extends Component {
                 placeholder="Password"
                 class="input"
               />
-              
 
               <div id="error_div"></div>
-              
+
               <a href="https://reactjs.org" class="link">
                 Forgot your password?
               </a>
 
-              <button type="submit" class="btn" >
+              <button type="submit" class="btn">
                 Sign In
               </button>
             </form>
