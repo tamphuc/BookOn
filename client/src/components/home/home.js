@@ -149,6 +149,14 @@ export default class Home extends Component {
                       </a>
                     </div>
 
+                    <div className="item-write pt-5">
+
+                      <a href="/write" className="button">
+                        Write
+                      </a>
+
+                    </div>
+
                     <div class="overlay-details">
                       <a href="#" class="close-overlay-btn">
                         Close
@@ -259,6 +267,8 @@ export default class Home extends Component {
                       </a>
                     </div>
 
+
+
                     <div class="overlay-details">
                       <a href="#" class="close-overlay-btn">
                         Close
@@ -357,17 +367,27 @@ export default class Home extends Component {
                         </div>
                       </div>
                     </div>
+
                     <div class="item-details">
                       <h3 class="book-item_title">Lord of the Flies</h3>
                       <p class="author">by William Golding &bull; 1954</p>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Etiam tellus nisi, eget pulvinar in, molestie et arcu.
+
                       </p>
                       <a href="#" class="button">
                         Details
                       </a>
                     </div>
+
+                    <div className="item-write pt-5">
+
+                      <a href="#" className="button">
+                        Write
+                      </a>
+                    </div>
+
 
                     <div class="overlay-details">
                       <a href="#" class="close-overlay-btn">
@@ -480,6 +500,14 @@ export default class Home extends Component {
                         Details
                       </a>
                     </div>
+
+                    <div className="item-write pt-5">
+
+                      <a href="#" className="button">
+                        Write
+                      </a>
+                    </div>
+
 
                     <div class="overlay-details">
                       <a href="#" class="close-overlay-btn">
