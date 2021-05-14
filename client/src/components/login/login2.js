@@ -19,26 +19,15 @@ export default class Login extends Component {
 
   handleSignin = (e) => {
     e.preventDefault();
-    // let url = "http://localhost:5000/account/signin"
-    //
-    // let formData = new FormData(document.querySelector('signin_form'))
-    //
-    // let option = {method: "POST", body: formData}
-    //
-    //
-    // fetch(url,option).then(function(response) {
-    //   console.log(response)
-    // })
-    let url = "http://localhost:3000/home";
-    //window.location.href = url;
-    window.location.assign(url);
-  };
+    let url = "http://localhost:5000/account/signin";
 
-  handleSignUp = (e) => {
-    e.preventDefault();
-    let url = "http://localhost:3000/home";
-    //window.location.href = url;
-    window.location.assign(url);
+    let formData = new FormData(document.querySelector("signin_form"));
+
+    let option = { method: "POST", body: formData };
+
+    fetch(url, option).then(function (response) {
+      console.log(response);
+    });
   };
 
   redirect = () => {
@@ -63,10 +52,9 @@ export default class Login extends Component {
         <div class="container right-panel-active">
           <div class="container__form container--signup">
             <form
-              action="http://localhost:5000/account/signup"
+              action="http://localhost:3000/home"
               method="post"
               class="form"
-              onSubmit={this.handleSignUp}
             >
               <h2 class="form__title">Sign Up</h2>
               <input
@@ -96,7 +84,7 @@ export default class Login extends Component {
 
           <div class="container__form container--signin">
             <form
-              action="http://localhost:5000/account/signin"
+              action="http://localhost:3000/home"
               id="signin_form"
               method="post"
               class="form"
