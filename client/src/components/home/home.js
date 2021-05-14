@@ -117,14 +117,26 @@ export default class Home extends Component {
                     <div class="bk-img">
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
+                          <a href="/read/1jhlg8761jk432875">
+
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                              <img
+                                  src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Of_Mice_and_Men_%281937_1st_ed_dust_jacket%29.jpg"
+                                  alt="Book Cover">
+
+                              </img>
                           </div>
+                          </a>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
                         </div>
                       </div>
                     </div>
+                    {/*<div class="bk-img">*/}
+                    {/*  <img*/}
+                    {/*      src="https://salt.tikicdn.com/cache/w400/media/catalog/product/i/m/img398_6.jpg"*/}
+                    {/*      alt="Book Cover">*/}
+                    {/*  </img>                    </div>*/}
                     <div class="item-details">
                       <h3 class="book-item_title">Of Mice and Men</h3>
                       <p class="author">by John Steinbeck &bull; 1937</p>
@@ -142,10 +154,10 @@ export default class Home extends Component {
                         Close
                       </a>
                       <div class="overlay-image">
-                        <img
-                          src="http://interactivejoe.com/book-viewer/assets/images/bk_1-large.jpg"
-                          alt="Book Cover"
-                        />
+                        {/*<img*/}
+                        {/*  src="https://salt.tikicdn.com/cache/w400/media/catalog/product/i/m/img398_6.jpg"*/}
+                        {/*  alt="Book Cover">*/}
+                        {/*</img>*/}
                         <div class="back-color"></div>
                       </div>
                       <div class="overlay-desc activated">
@@ -222,9 +234,14 @@ export default class Home extends Component {
                     <div class="bk-img">
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
+                          <a href="/read/1097876jgak000">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://salt.tikicdn.com/cache/w400/media/catalog/product/i/m/img398_6.jpg"
+                                alt="Book Cover">
+                            </img>
                           </div>
+                          </a>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
                         </div>
@@ -248,7 +265,7 @@ export default class Home extends Component {
                       </a>
                       <div class="overlay-image">
                         <img
-                          src="http://interactivejoe.com/book-viewer/assets/images/bk_2-large.jpg"
+                          src="http://salt.tikicdn.com/cache/w400/media/catalog/product/i/m/img398_6.jpg"
                           alt="Book Cover"
                         />
                         <div class="back-color"></div>
@@ -327,9 +344,14 @@ export default class Home extends Component {
                     <div class="bk-img">
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
+                          <a href="/read/1hak08755279hjk">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://static.wikia.nocookie.net/harrypotter/images/3/31/Order_of_the_Phoenix_New_Cover.jpg/revision/latest?cb=20170109054726"
+                                alt="Book Cover">
+                            </img>
                           </div>
+                          </a>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
                         </div>
@@ -422,6 +444,7 @@ export default class Home extends Component {
                     </div>
                   </li>
 
+
                   <li
                     class="book-item small-12 medium-6 columns"
                     data-groups='["classic"]'
@@ -429,12 +452,18 @@ export default class Home extends Component {
                     data-title="The Great Gatsby"
                     data-color="#e3b005"
                   >
+
                     <div class="bk-img">
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
+                          <a href="/read/10978761097432875">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://render.fineartamerica.com/images/rendered/default/wood-print/6.5/8/break/images-medium-5/the-great-gatsby-book-cover-movie-poster-art-4-nishanth-gopinathan.jpg"
+                                alt="Book Cover">
+                            </img>
                           </div>
+                          </a>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
                         </div>
@@ -538,7 +567,10 @@ export default class Home extends Component {
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://target.scene7.com/is/image/Target/GUEST_af01abae-16d1-46ed-b663-d931beec2138?fmt=webp&wid=700&qlt=80"
+                                alt="Book Cover">
+                            </img>
                           </div>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
@@ -643,7 +675,10 @@ export default class Home extends Component {
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://images-na.ssl-images-amazon.com/images/I/411WOn6Z3XL._SX331_BO1,204,203,200_.jpg"
+                                alt="Book Cover">
+                            </img>
                           </div>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
@@ -748,7 +783,10 @@ export default class Home extends Component {
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://salt.tikicdn.com/cache/w444/ts/product/b6/97/9f/8812f92e0ecfc0c5fa17eedb8d6e37b3.png"
+                                alt="Book Cover">
+                            </img>
                           </div>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
@@ -855,7 +893,10 @@ export default class Home extends Component {
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://m.media-amazon.com/images/I/51YvI3qCC2L.jpg"
+                                alt="Book Cover">
+                            </img>
                           </div>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
@@ -964,7 +1005,10 @@ export default class Home extends Component {
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://images-na.ssl-images-amazon.com/images/I/9134M22gEbL.jpg"
+                                alt="Book Cover">
+                            </img>
                           </div>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
@@ -1069,7 +1113,10 @@ export default class Home extends Component {
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://images-na.ssl-images-amazon.com/images/I/51wPXAA2puL._SX258_BO1,204,203,200_.jpg"
+                                alt="Book Cover">
+                            </img>
                           </div>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
@@ -1178,7 +1225,10 @@ export default class Home extends Component {
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://images-na.ssl-images-amazon.com/images/I/51ulyeOR-GL._SX258_BO1,204,203,200_.jpg"
+                                alt="Book Cover">
+                            </img>
                           </div>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
@@ -1283,7 +1333,11 @@ export default class Home extends Component {
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://images-na.ssl-images-amazon.com/images/I/71k5%2Ba4ap0L._SL1156_.jpg"
+                                alt="Book Cover">
+                            </img>
+
                           </div>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
@@ -1392,7 +1446,10 @@ export default class Home extends Component {
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://cdn.hmv.com/r/w-1280/hmv/files/ee/ee0a6931-ce04-4bde-857b-f6e8f5fadc27.jpg"
+                                alt="Book Cover">
+                            </img>
                           </div>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
@@ -1501,7 +1558,10 @@ export default class Home extends Component {
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://cdn.hmv.com/r/w-1280/hmv/files/ee/ee0a6931-ce04-4bde-857b-f6e8f5fadc27.jpg"
+                                alt="Book Cover">
+                            </img>
                           </div>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
@@ -1610,7 +1670,10 @@ export default class Home extends Component {
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://salt.tikicdn.com/cache/w400/media/catalog/product/i/m/img398_6.jpg"
+                                alt="Book Cover">
+                            </img>
                           </div>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
@@ -1719,7 +1782,10 @@ export default class Home extends Component {
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="http://ielts-share.com/wp-content/uploads/2018/09/5.-Harry-Potter-and-the-Order-of-the-Phoenix.jpg"
+                                alt="Book Cover">
+                            </img>
                           </div>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
@@ -1828,7 +1894,10 @@ export default class Home extends Component {
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://salt.tikicdn.com/cache/w400/media/catalog/product/i/m/img398_6.jpg"
+                                alt="Book Cover">
+                            </img>
                           </div>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>
@@ -1937,7 +2006,10 @@ export default class Home extends Component {
                       <div class="bk-wrapper">
                         <div class="bk-book bk-bookdefault">
                           <div class="bk-front">
-                            <div class="bk-cover"></div>
+                            <img
+                                src="https://static.wikia.nocookie.net/harrypotter/images/3/31/Order_of_the_Phoenix_New_Cover.jpg/revision/latest?cb=20170109054726"
+                                alt="Book Cover">
+                            </img>
                           </div>
                           <div class="bk-back"></div>
                           <div class="bk-left"></div>

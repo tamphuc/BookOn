@@ -14,7 +14,7 @@ export default class App extends Component {
           <Switch>
             <Route exact path={"/"} component={Login} />
             <Route exact path={"/home"} component={Home} />
-            <Route exact path={"/read"} component={Read} />
+            <Route exact path={"/read/:id"} component={Read} />
             <Route exact path={"/write"} component={Write} />
           </Switch>
         </BrowserRouter>
