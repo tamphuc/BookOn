@@ -58,6 +58,7 @@ export default class Login extends Component {
               action="http://localhost:5000/account/signup"
               method="post"
               class="form"
+
             >
               <h2 class="form__title">Sign Up</h2>
               <input
