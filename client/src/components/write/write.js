@@ -25,8 +25,13 @@ export default class Write extends Component {
             console.log("Focus.", editor);
           }}
         />
-        <button type="submit" class="btn">Submit</button>
+
+        <a href="/home">
+        <button  type="submit" class="btn">Submit</button>
+        </a>
+
       </div>
+
 
     );
   }

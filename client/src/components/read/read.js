@@ -27,7 +27,7 @@ export default class Read extends Component {
                 <a href="#">Chapter 1</a>
               </li>
               <li>
-                <a href="#">Next</a>
+                <a href="/read2/1jhlg8761jk432875">Next</a>
               </li>
             </ul>
           </nav>
