@@ -10,6 +10,8 @@ import Chapter3 from "./components/read/read3"
 import Chapter4 from "./components/read/read4"
 import Chapter5 from "./components/read/read5"
 import Write from "./components/write/write"
+import Detail1 from "./components/details/detail1"
+
 export default class App extends Component {
   render() {
     return (
@@ -24,6 +26,8 @@ export default class App extends Component {
             <Route exact path={"/read4/:id"} component={Chapter4} />
             <Route exact path={"/read5/:id"} component={Chapter5} />
             <Route exact path={"/write"} component={Write} />
+            <Route exact path={"/detail1/"} component={Detail1} />
+
           </Switch>
         </BrowserRouter>
       </div>

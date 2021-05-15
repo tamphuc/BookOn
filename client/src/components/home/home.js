@@ -144,7 +144,7 @@ export default class Home extends Component {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Etiam tellus nisi, eget pulvinar in, molestie et arcu.
                       </p>
-                      <a href="#" class="button">
+                      <a href="/detail1" class="button">
                         Details
                       </a>
                     </div>

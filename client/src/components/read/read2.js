@@ -22,7 +22,7 @@ export default class Chapter extends Component {
                     <nav>
                         <ul>
                             <li>
-                                <a href="#">Previous</a>
+                                <a href="/read/1jhlg8761jk432875">Previous</a>
                             </li>
                             <li>
                                 <a href="#">Chapter 2</a>
